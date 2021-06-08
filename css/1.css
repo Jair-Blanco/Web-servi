@@ -1,0 +1,341 @@
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/*quitar margen que traen margen po defecto varias equitas de html*/
+body, h1, h2, h3, p, h4, h5, h6, figure, img {margin: 0;}
+a {text-decoration: none;}
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width:45px;   height:45px;  margin:0;   float:none;   position:fixed;   right:15px;  bottom:15px;
+z-index: 99998; }
+
+aside#boton-wp a {width:100%;  height:auto;   margin:0;  float:none;  position:relative;  display:block;
+background-color:#00bb2d;   border-radius:50%;    text-align:center;  padding:10px 0;  
+transition:all 0.3s ease-in;}
+
+aside#boton-wp a i {font-size:1.5em;  line-height:1em;  color:#fff;  transition:all 0.3s ease-in;  }
+
+aside#boton-wp a:hover {   background:#000;  transition:all 0.3s ease-in; }
+aside#boton-wp a:hover i {  color:#00741b;  transition:all 0.3s ease-in; }
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; 
+right: -290px; top: 0; z-index: 99999; background: #8d8e8d; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; 
+top: 5px; left: -35px; display: block; text-decoration: none; color: #fff; background: #029a31; 
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; 
+border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#abrir-menu:hover { background: #104e24; transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; 
+top: 5px; left: -35px; display: none; text-decoration: none; color: #fff; background: #029a31; 
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; 
+border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu:hover { background: #104e24; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; 
+position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; 
+transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav a:hover { color: #029a31; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Header con Logo y Menú */
+header { width: 100%; height: 60px; margin: 0; float: none; position: fixed; left: 0; top: 0; z-index: 99990;}
+
+header article { width: 1100px; height: 80px; margin: 0 auto; float: none; position: relative; }
+
+header article figure { width: 152px; height: 60px; margin: 0; float: left; position: relative; top: 10px; }
+header article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; 
+display: block; }
+header article figure a img { width: auto; height: 40px; margin: 0 auto; float: none; position: relative; 
+display: block; }
+
+header article nav { width: 308px; height: 40px; margin: 0; float: right; position: relative; top: 20px; }
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; 
+text-decoration: none; color: #FFF; font-weight: 700; font-size: 1em; line-height: 1em; text-align: 
+center; padding: 5px 0; border-bottom: solid 2px #000; transition: all 0.3s ease-in; }
+
+header article nav a:hover { color: #000; border-bottom: solid 2px #FFF; transition: all 0.3s ease-in; }
+
+
+.transparente {background: rgb(196 196 196 / 0%); }
+
+.gris {background: rgb(2 154 49 / 100%); }
+
+
+
+/* Caja Main */
+main { width:100%;  height:auto;   float:none;  position:relative; }
+
+/*slider*/
+main section#slider-home{ width:100%;  height:auto;  position:relative;  margin:0 auto;  float:none;
+/*background: url(../img/slider-01.jpg) no-repeat; top:center;   background-size:cover;*/ }
+
+main section#slider-home article { width:100%;  height:100vh;  position:relative;  margin:0 auto;  float:none;
+}
+
+main section#slider-home article figure { width:100%;  height:100vh;  position:relative;  margin:0;  
+float:left;}
+
+main section#slider-home article figure.slider-01{ background: url(../img/slider01.jpg) no-repeat; 
+top:center; background-size:cover; }
+
+main section#slider-home article figure.slider-02{ background: url(../img/slider02.jpg) no-repeat; 
+top:center; background-size:cover; } 
+
+main section#slider-home article figure.slider-03{  background: url(../img/slider03.jpg) no-repeat; 
+top:center; background-size:cover;} 
+
+.slick-next {right: 30px !important; z-index: 999;}
+.slick-prev { left: 30px !important; z-index: 999;}
+
+.slick-dots { bottom:30px !important;  }
+
+.slick-dots li button{ width:10px !important; height:10px !important;  }
+
+.slick-dots li button:before {width:10px !important; height:10px !important; font-size: 1em; 
+color:transparent !important;  border-radius:50% !important;  background:#00b049 !important;   
+opacity: 1 !important; }
+
+.slick-dots li.slick-active button:before {color: transparent !important; background:#0f67c4 !important; 
+opacity: 1 !important;}
+
+
+
+
+
+/*banner*/
+main hr { width: 80%; margin-bottom: 50px; }
+main section#banner-superior { width: 100%; height: 300px;
+background: url('https://www.docunecta.com/hubfs/tipos-clasificadores-documentos.jpg') no-repeat; background-size: cover; }
+
+main section#banner-superior article { width: 100%; height: 300px; display: flex; align-items: center; background: rgb(0 0 0 / 35%); }
+
+main section#banner-superior article h1 { font-size: 3em; color: #fff;  margin: 0 auto; }
+
+
+
+
+
+
+
+
+
+/* Componente Presentación */
+main section#empresa { width: 100%; height: auto; margin: 0 auto 90px; float: none; position: relative; }
+
+main section#empresa div#ancla-empresa { width: 100%; height: 1px; margin: 0; float: none; position: absolute; 
+top: -120px; left: 0; }
+
+main section#empresa article { width: 1100px; height: 520px; margin: 0 auto; float: none; position: relative; }
+main section#empresa article figure { width: 520px; height: 520px; margin: 0 100px 0 0; float: left; 
+position: relative; }
+
+main section#empresa article figure img { width: 100%; height: auto; margin: 0 auto; float: none; 
+position: relative; display: block; top: 80px;}
+
+main section#empresa article div#info-empresa { width: 480px; height: 520px; margin: 0; float: right; 
+position: relative; }
+main section#empresa article div#info-empresa h2 { text-decoration: none; color: #002c50; font-weight: 500; 
+font-size: 1.85em; line-height: 1em; text-align: left; padding: 65px 0 20px; letter-spacing: -0.02em; }
+
+main section#empresa article div#info-empresa h1 { text-decoration: none; color: #000; font-weight: 800; 
+font-size: 2.8em; line-height: 1em; text-align: left; padding: 0 0 30px; letter-spacing: -0.02em; }
+
+main section#empresa article div#info-empresa p { color: #333; font-weight: 400; font-size: 1.05em; 
+line-height: 1.45em; text-align: left; padding: 0 52px 30px 0; letter-spacing: 0.015em; }
+
+main section#empresa article div#info-empresa a { width: 120px; height: auto; margin: 0; float: none; 
+position: relative; display: block; text-decoration: none; color: #fff; background: #00b049; 
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 12px 22px; 
+border-radius: 25px; transition: all 0.3s ease-in; }
+
+main section#empresa article div#info-empresa a:hover { padding: 12px 25px; color: #FFF;font-size:1.05em;
+background: #127c3d; transition: all 0.3s ease-in; }
+
+
+
+
+/* Componente Servicios 4 Columnas */
+main section#servicios { width: 100%; height: auto; margin: 0 auto 90px; float: none; position: relative; }
+
+main section#servicios div#ancla-servicios { width: 100%; height: 1px; margin: 0; float: none; 
+position: absolute; top: -120px; left: 0; }
+
+main section#servicios article { width: 1100px; height: 230px; margin: 0 auto; float: none; position: relative; }
+main section#servicios article figure { width: 230px; height: 230px; margin: 0 60px 0 0; float: left; 
+position: relative; }
+main section#servicios article figure:last-child { margin: 0; }
+/*main section#servicios article figure:nth-child(4) { margin: 0; } */
+main section#servicios article figure img { width: auto; height: 95px; margin: 0 auto 25px; float: none; 
+position: relative; display: block;  trasnsition:all 0.3s ease-in;}
+
+main section#servicios article figure h3 { color: #000; font-weight: 700; font-size: 1.35em; 
+line-height: 1em; text-align: center; padding: 0 0 20px; transition: all 0.3s ease-in}
+
+main section#servicios article figure p { color: #333; font-weight: 400; font-size: 1em; 
+line-height: 1.45em; text-align: center; padding: 0; letter-spacing: 0.015em; transition: all 0.3s ease-in}
+
+main section#servicios article figure a:hover img {transform: scale(1.15);  transition: all 0.3s ease-in;
+filter: grayscale(50%);}
+
+main section#servicios article figure a:hover h3 {transition: all 0.3s ease-in; color:#0f9645 ;}
+main section#servicios article figure a:hover p { color:#0f9645;  }
+
+
+/* Componente Footer con 4 columnas */
+footer { width:100%;   height:auto;  margin:0 auto;    position:relative;   background-color:#0f9645;}  
+
+footer article {width:1100px;  height:auto;  margin:0 auto;  float:none;  position:relative;  padding:70px 0;}
+
+footer article div#superior-footer {width:100%;   height:200px;  margin:0 auto 30px;   float:none;  
+position:relative; }
+
+footer article div#superior-footer div.cajas-footer {width:230px;  height:200px;   margin:0 60px 0 0;   float:left;
+position: relative;  }
+
+footer article div#superior-footer div.cajas-footer:last-child{ margin:0; }
+
+footer article div#superior-footer div.cajas-footer img {width:auto;  height:50px;   margin:0 0 10px; 
+display:block;  float:none;  position:relative; }
+
+footer article div#superior-footer div.cajas-footer p {width:auto;   height:auto;   margin:0;  float:none; 
+position:relative;  color:#fff;  font-weight:300;   font-size: 0.9em;   line-height:1.35em;   text-align: left; 
+padding:0 30px 0 0;  letter-spacing:0.03em; }
+
+footer article div#superior-footer div.cajas-footer h6 {width:auto;   height:auto;   margin:0;  float:none; 
+position:relative;  color:#fff;  font-weight:600;   font-size: 1.4em;   line-height:1.35em;   text-align: left; 
+padding:0 0 15px 0;  letter-spacing:0.03em; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto{width:100%;  height:auto;  
+display:block; margin:0 auto;  float:none;   position:relative; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a {width:100%;  height:30px;  
+display:block; margin:0 auto 5px;  float:none;   position:relative;  transition: all 0.3s ease-in; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a i {width:10%;  height:auto;  
+display:block; margin:0;  float:left;   position:relative;   padding:3px 0;  color:#8bc8f1; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a span {width:90%;  height:auto;  
+display:block; margin:0;  float:left;   position:relative;   padding:0;  color:#fff;}
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover {transition: all 0.3s ease-in;}
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover i{color:#000;
+transition:all 0.3s ease-in;}
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover span{color:#09f;  
+transition:all 0.3s ease-in;}
+
+
+/* componente botones redes sociales */
+footer article div#superior-footer div.cajas-footer nav#links-redes { width: 200px; height: 41px; margin: 0; 
+float: none; position: relative; }
+footer article div#superior-footer div.cajas-footer nav#links-redes a { width: 41px; height: auto; margin: 0; 
+float: left; position: relative; display: block; text-align: center; padding: 10px 0; 
+transition: all 0.3s ease-in; }
+/* footer article div#superior-footer div.cajas-footer nav#links-redes a:hover {} */
+footer article div#superior-footer div.cajas-footer nav#links-redes a i { font-size: 1.2em; line-height: 1em; 
+color: #fff; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-redes a:hover i { color: #0981e4; 
+transition: all 0.3s ease-in; }
+
+
+
+/* inferior footer */
+footer article div#inferior-footer {width:100%;   height:40px;  margin:0 auto;  float:none;  position:relative;}
+footer article div#inferior-footer p {width:auto;   height:auto;   margin:0;  float:none;  position:relative;  
+color:#fff;  font-weight:300;   font-size: 0.9em;   line-height:1.35em;   text-align:center; 
+padding:0 30px 0 0;  letter-spacing:0.1em;}
+
+footer article div#inferior-footer p strong {font-weight:700; }
+
+
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+header article { width: 90%; }
+header article figure { margin: 0 auto; float: none; }
+header article nav { display: none; }
+
+
+aside#menu-moviles { display: block; }
+
+/*banner*/
+main hr { width: 40%; height: ; }
+main section#banner-superior { width: 100%; }
+main section#banner-superior article h1 { text-align: center; font-size: 2em; color: #fff;  margin: 0 auto; }
+
+
+main section#empresa { height: auto; }
+main section#empresa article { width: 80%; height: auto; }
+main section#empresa article figure { width: 100%; height: 340px; margin: 0 auto; float: none; }
+main section#empresa article figure img { height: 300px; top: 45px; }
+main section#empresa article div#info-empresa { width: 100%; height: auto; margin: 0 auto; float: none; }
+main section#empresa article div#info-empresa h2,
+main section#empresa article div#info-empresa h1,
+main section#empresa article div#info-empresa p { text-align: center; }
+main section#empresa article div#info-empresa p { margin: 0 auto; float: none; padding: 0 0 15px; }
+main section#empresa article div#info-empresa a { margin: 10px auto 0 auto; float: none; width: 150px; text-align: center; }
+
+
+main section#servicios article { width: 80%; height: auto; }
+main section#servicios article figure { margin: 0 auto 40px; float: none; }
+main section#servicios article figure:last-child { margin: 0 auto; }
+
+
+footer article { width: 80%; }
+footer article div#superior-footer { height: auto; }
+footer article div#superior-footer div.cajas-footer { height: auto; margin: 0 auto 60px; float: none; }
+footer article div#superior-footer div.cajas-footer img { margin: 0 auto 15px; float: none; }
+footer article div#superior-footer div.cajas-footer p { text-align: center; padding: 0; }
+footer article div#superior-footer div.cajas-footer h6 { text-align: center; }
+footer article div#superior-footer div.cajas-footer nav#links-redes { width: 168px; height: 41px; margin: 0 auto; float: none; }
+footer article div#superior-footer div.cajas-footer:last-child { margin: 0 auto 40px; }
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
+
+		
+
+
+
+
+
+
+
+
+
+
+
